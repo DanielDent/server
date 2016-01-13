@@ -247,7 +247,11 @@ enum enum_server_command
 #define CAN_CLIENT_COMPRESS 0
 #endif
 
-/* Gather all possible capabilites (flags) supported by the server */
+/*
+  Gather all possible capabilites (flags) supported by the server
+
+  MARIADB_* flags supported only by MariaDB connector(s).
+*/
 #define CLIENT_ALL_FLAGS  (CLIENT_MYSQL | \
                            CLIENT_FOUND_ROWS | \
                            CLIENT_LONG_FLAG | \
